@@ -6,7 +6,8 @@
  Pd 10
  
  General Plan:
- -Slides of use of buffer overflow
+ 
+  - Slides of use of buffer overflow
     - importance/history? 
     - Uses
     - How it works
