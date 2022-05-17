@@ -7,9 +7,9 @@
  
  General Plan:
  
-  - Slides of use of buffer overflow
-    - importance/history? 
+  - Slides on use of buffer overflow
+    - Importance 
     - Uses
     - How it works
- - Tool to Show buffer overflow
+ - Tool to demonstrate buffer overflow
     
