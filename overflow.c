@@ -4,7 +4,7 @@
 
 struct commands {
 	char input[10];
-	char command[2];
+	char command[3];
 };
 
 int main() {
