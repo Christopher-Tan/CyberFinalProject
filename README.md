@@ -12,4 +12,4 @@
     - Uses
     - How it works
  - Tool to demonstrate buffer overflow
-    
+    - Proof of concept
