@@ -7,7 +7,7 @@ Buffer overflow is a type of attack where hackers exploit the storage capacity o
 
 ## Why should you care about Buffer Overflow?
 
-A buffer overflow attack is an attack 
+A buffer overflow attack can be very harmful since it can exploit buffers by overwriting the memory, run exploits, and more. An example of Buffer Overfflow attack is the SQL Slammer which was a bug in 2003 in the Microsoft SQL and doubled the size of the buffer every 9 seconds which caused internet outrages across the world. Another example is the Morris Worm which attacked and comprimised over 60000 machines.
 
 ## How code is vulnerable is to it and how do you counter it?
 
