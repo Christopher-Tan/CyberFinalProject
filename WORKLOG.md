@@ -8,3 +8,4 @@
 #### 5/23:
 	Christopher- Studying stack frames & code injection.
 #### 5/24:
+	Christopher- Worked on presentation and explanations of memory structure.
