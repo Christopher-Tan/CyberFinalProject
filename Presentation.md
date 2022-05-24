@@ -15,6 +15,19 @@ As mentioned before, a buffer is a type of memory storage which is only meant to
 
 ## C Memory Structure 
 
+1. Text segment  (i.e. instructions)
+	*
+2. Initialized data segment 
+	*
+3. Uninitialized data segment  (bss)
+	*
+4. Heap 
+	*
+5. Stack
+	*
+	*
+ 
+ 
 https://www.geeksforgeeks.org/memory-layout-of-c-program/
 
 ## Example 
