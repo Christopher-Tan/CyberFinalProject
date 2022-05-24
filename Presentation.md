@@ -33,4 +33,4 @@ int main() {
 }
 
 ```
-If you run this code in terminal, you get 'File: '. And if you put in ' .. ' you can get the last saved in the pervious directory. However, if you put in 'o       sud', the code will loop and run sudo which is obviously not the intent of the code.
+If you run this code in terminal, you get 'File: '. And if you put in ' .. ' you can get the last saved in the pervious directory. However, if you put in 'o [6 spaces] sud', the code will loop and run sudo which is obviously not the intent of the code.
