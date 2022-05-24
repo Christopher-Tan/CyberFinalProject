@@ -25,8 +25,10 @@ There are five essential components to the memory layout of a c program.
 5. Heap - Dynamic shared memory that is unordered.
 
 Initialized meaning they were assigned a value.
+~~~
 static int a = 10; //initialized
 static int b; //uninitialized
+~~~
 
 The essential idea is that stacks (usually) grow towards address 0, and heaps grow in the opposite direction. The variables in a stack frame also usually grow towards 0.
 
