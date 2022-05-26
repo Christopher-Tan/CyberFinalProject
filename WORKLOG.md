@@ -9,3 +9,7 @@
 	Christopher- Studying stack frames & code injection.
 #### 5/24:
 	Christopher- Worked on presentation and explanations of memory structure.
+#### 5/25:
+	Christopher- Worked on slides
+#### 5/26:
+	Christopher- Worked on challenge, it is working correctly.
