@@ -19,7 +19,7 @@ As mentioned before, a buffer is a type of memory storage which is only meant to
  
 https://www.geeksforgeeks.org/memory-layout-of-c-program/
 
-## Example 
+## Examples
 
 ```
 struct commands {
@@ -36,3 +36,8 @@ int main() {
 
 ```
 If you run this code in terminal, you get `File: `. And if you put in ` .. ` you can get the last saved in the pervious directory. However, if you put in `o [6 spaces] sud`, the code will loop and run sudo which is obviously not the intent of the code.
+
+
+## Stack-based buffer overflow
+
+One of the most common types of buffer overflows is Stack-based. 
