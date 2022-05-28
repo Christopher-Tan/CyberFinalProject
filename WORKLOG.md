@@ -1,10 +1,12 @@
 #### Prior to 5/19:
 	Christopher- Research and created a vulnerable proof of concept.
-	Matthew- Worked on research, planning, and slides.
+	Matthew- Worked on research, planning, and slide
 #### 5/19:
 	Christopher- Researched c stack memory and heap memory structure.
+#### 5/20:
+	Christopher- Learned about c stack memory: EIP, ESP, and EBP, and git. Started working on creating a challenge program.
 #### 5/23:
-	Christopher -
+	Christopher- Studying stack frames & code injection.
 	Matthew - Presentation outline and finished two small sections of the presentation
 	Soures: 
 	(Just Basic information about Buffer Overflow)
@@ -12,13 +14,16 @@
 	https://stackoverflow.com/questions/648309/what-does-it-mean-by-buffer 
 	https://www.imperva.com/learn/application-security/buffer-overflow/ 
 #### 5/24:
-	Christopher - 
+	Christopher- Worked on presentation and explanations of memory structure.
 	Matthew - Explained basic example of buffer overflow and also went over past exploits
 	Sources:
 	https://www.logsign.com/blog/buffer-overflow-attack-prevention/ 
-#### 5/25
-	Christopher-
+#### 5/25:
+	Christopher- Worked on slides
 	Matthew - Learned more about buffer overflow and will add on presenation. Learned how to use branches.
-#### 5/26
-	Christopher -
+#### 5/26:
+	Christopher- Worked on challenge, it is working correctly.
 	Matthew - Wrote about Stack based buffer overflows and how to attack them in own branch
+#### 5/27:
+	Christopher- Worked on homework, we plan to explain how buffer overflow attacks have become less common over the years, and system protections against them.
+	Matthew- Tested out the challenge code, more plans for presentation: how to brute force/code for challenge, buffer overflow in modern day, future of buffer overflow?

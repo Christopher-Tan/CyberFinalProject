@@ -1,3 +1,5 @@
-run: overflow.c
+overflow: overflow.c
 	gcc -o overflow overflow.c
-	./overflow
+
+challenge: challenge.c
+	gcc -fno-stack-protector -o challenge challenge.c
