@@ -1,15 +1,9 @@
 # Overflowing Buffer
 
  By:
- Christopher Tan 
- Matthew Weng 
- Pd 10
+ Christopher Tan, Matthew Weng (Period 10)
+ #### Our project is a general purpose introduction to buffer overflow attacks: how they work, how to prevent them, and why they are relevant.
  
- General Plan:
+ [Presentation](https://github.com/Christopher-Tan/CyberFinalProject/blob/main/PRESENTATION.md) \
+ [Homework](https://github.com/Christopher-Tan/CyberFinalProject/blob/main/HOMEWORK.md)
  
-  - Slides on use of buffer overflow
-    - Importance 
-    - Uses
-    - How it works
- - Tool to demonstrate buffer overflow
-    - Proof of concept
