@@ -31,3 +31,5 @@
 #### 5/27:
 	Christopher- Worked on homework, we plan to explain how buffer overflow attacks have become less common over the years, and system protections against them.
 	Matthew- Tested out the challenge code, more plans for presentation: how to brute force/code for challenge, buffer overflow in modern day, future of buffer overflow?
+#### 5/28:
+	Christopher- Merged branches, worked on completing extraneous documentation and fixing OS code compilation problems.
