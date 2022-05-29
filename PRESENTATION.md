@@ -13,6 +13,12 @@ A buffer overflow attack can be extremely dangerous since it can overwrite memor
 
 As mentioned before, a buffer is a type of memory storage which is only meant to hold small amounts of data, a hacker can easily overflow it by giving more data than it can handle. Some ways to defend against these kinds of attacks is to be careful when using low-level languages such as C that rely on allocated memory, program non-executable buffers, and array bound checking which can detect altered data to make sure nothing has been corrupted. Most modern operating systems have in-built checks, and many vulnerable functions have clear warnings.
 
+https://www.securecoding.com/blog/how-to-protect-against-buffer-overflow-attack/ 
+
+## Buffer Overflow in Modern Day
+
+https://www.sciencedirect.com/science/article/pii/S1877050919316527
+
 In C, there are two functions that are especially vulnerable to overflow attacks: gets() and strcpy().
 
 ## C Memory Structure 
@@ -50,3 +56,6 @@ int main() {
 ```
 The code normally runs ls, however, overflowing the input buffer allows us to alter the command variable. If the program was running with root priviledges, the attacker would have full access to the machine.
 
+## Some Examples 
+
+https://owasp.org/www-community/attacks/Buffer_overflow_attack
