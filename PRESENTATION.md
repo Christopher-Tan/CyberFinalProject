@@ -9,6 +9,8 @@ Buffer overflow exploits are a type of attack where hackers exploit the size cap
 
 A buffer overflow attack can be extremely dangerous since it can overwrite memory, run exploits, and more. One example of a Buffer Overflow attack is the SQL Slammer which was a bug in 2003 in Microsoft SQL and doubled the size of the buffer every 9 seconds which caused internet outages across the world. Another example is the Morris Worm which attacked and compromised over 60000 machines.
 
+![example](https://www.securecoding.com/wp-content/uploads/2020/12/1-540x152.jpg)
+
 ## How to recognize vulnerable code? 
 
 As mentioned before, a buffer is a type of memory storage which is only meant to hold small amounts of data, a hacker can easily overflow it by giving more data than it can handle.  
@@ -65,8 +67,11 @@ static int b; //uninitialized
 
 The essential idea is that stacks (usually) grow towards address 0, and heaps grow in the opposite direction. The variables in a stack frame also usually grow towards 0.
 
-## Most Common Types of Buffer Overflow Attacks
+## Common types of buffer overflow
 
+The two most common types of buffer overflow attacks are stack-based and heap-based. 
+
+As mentioned earlier, a stack is LIFO data structure. A stack frame has a limited amount of memory so when a function call occurs more than the capacity a fatal error occurs called stack overflow. When this happens, it goes into the next stack frame and can alter its values and outputs. 
 
 ## Buffer Overflow in Modern Day
 
