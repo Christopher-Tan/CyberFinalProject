@@ -42,10 +42,6 @@ There are protections provided by OSes which is ASLR(Address space layout random
 
 ![ASLR](https://assets.website-files.com/5ff66329429d880392f6cba2/62750ba095367e5445140d1e_Buffer%20Overflow%20Attack-p-1080.jpeg)
 
-https://www.securecoding.com/blog/how-to-protect-against-buffer-overflow-attack/ 
-https://www.synopsys.com/blogs/software-security/detect-prevent-and-mitigate-buffer-overflow-attacks/ 
-
-
 In C, there are two functions that are especially vulnerable to overflow attacks: gets() and strcpy().
 
 ## C Memory Structure 
@@ -73,10 +69,6 @@ The two most common types of buffer overflow attacks are stack-based and heap-ba
 
 As mentioned earlier, a stack is LIFO data structure. A stack frame has a limited amount of memory so when a function call occurs more than the capacity a fatal error occurs called stack overflow. When this happens, it goes into the next stack frame and can alter its values and outputs. 
 
-## Buffer Overflow in Modern Day
-
-Not sure
-https://www.sciencedirect.com/science/article/pii/S1877050919316527
 
 ## Proof of Concept 
 ```
@@ -94,4 +86,13 @@ int main() {
 ```
 The code normally runs ls, however, overflowing the input buffer allows us to alter the command variable. If the program was running with root priviledges, the attacker would have full access to the machine.
 
-
+Sources:
+https://www.securecoding.com/blog/how-to-protect-against-buffer-overflow-attack/ 
+https://www.synopsys.com/blogs/software-security/detect-prevent-and-mitigate-buffer-overflow-attacks/ 
+https://www.geeksforgeeks.org/buffer-overflow-attack-with-example/ 
+https://www.thegeekstuff.com/2013/06/buffer-overflow/ 
+https://www.excelsior.edu/article/understanding-the-dangers-of-buffer-overflow-attacks/ 
+https://stackoverflow.com/questions/648309/what-does-it-mean-by-buffer 
+https://www.imperva.com/learn/application-security/buffer-overflow/ 
+https://web.ecs.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf 
+https://www.logsign.com/blog/buffer-overflow-attack-prevention/ 
