@@ -1,5 +1,5 @@
 # Buffer Overflow
-### By:Christopher Tan and Matthew Weng
+### By: Christopher Tan and Matthew Weng
 
 ## What is a Buffer Overflow Attack? 
 
@@ -18,27 +18,27 @@ As mentioned before, a buffer is a type of memory storage which is only meant to
 The two most important aspects of code to lookout for to see if it is vulnerable is the language it is written in and if there is user input. When using low-level languages such as C that rely on allocated memory, buffers can easily be altered. User inputs can easily be malicious if there is not adequate security.
 
 ```
-void Presentation(){
+void main(){
 	char answer[4];
-	printf("Is this presentaiton good");
+	printf("Is this presentation good?");
 	gets(answer);
 }
 ```
 
-In this code, it would only accept `yes` and `no`. If you input something such as `somewhat`, it would be out of bound and would just show an error. However, you you put a 4-byte answer along with a address in memory, the program could be modified. Using this, hackers can get to other places in the code not meant to be accessible.
+This code should only accept `yes` or `no`. If you input something such as `somewhat`, the input would run out of bounds and it would show an error. However, if you input a 4-byte answer along with a address in memory and some binary code to run, the program could be modified. Using this, hackers can get to places in the code that are not meant to be accessible.
 
 
-## How to regognize buffer overflow and defend against buffer overflow?
+## How to recognize and defend against buffer overflow attacks?
 
-A way to check if your program has been tampered with is using array bound checking which can detect altered data to make sure nothing has been corrupted. Most modern operating systems have in-built checks, and many vulnerable functions have clear warnings. In addition, see if you compiler uses canaries which places random values in each buffer. If the value is altered, the program will shut don making sure no other alterations have been made.
+A way to check if your program has been tampered with is using array bound checking which can detect altered data to make sure nothing has been corrupted. Most modern operating systems have in-built checks, and many vulnerable functions have clear warnings. In addition, see if your compiler uses canaries which places random values in each buffer. If the value is altered, the program will terminate making sure no other alterations have been made.
 
-In the previous section, we talked about how string inputs are susceptible to buffer overflow attacks which is why some functions such as gets and printf should be avoided and safer versions such as `fgets` or `sprintf_s`. The reason why these functions mentioned are safer is due to the fact that it checks if the bounds are in the target range unlike functions such as `printf`. A similar way of this is adding `strn-` versions of the function which only write to the max size of the buffer. 
+In the previous section, we talked about how string inputs are susceptible to buffer overflow attacks which is why some functions such as gets and printf should be avoided and safer versions such as `fgets` or `sprintf_s`. The reason why these functions mentioned are safer is due to the fact that it checks if the bounds are in the target range unlike functions such as `printf`. A similar way of this is by using the `strn-` versions of string functions which only write to the max size of the buffer instead of the `str-` versions 
 
 Here is a small table of secure functions:
 
 ![table](https://www.synopsys.com/blogs/software-security/wp-content/uploads/2017/02/buffer-overflow-table.jpg)
 
-There are protections provided by OSes which is ASLR(Address space layout randomization) and DEP(Data Execution Prevention). ALSR randomized the layout of memory location of structures. The way this protects from buffer overflow attacks is that it makes it harder to guess the stack address making it harder to harm the program. DEP marks memory with attributes to make sure code executions can't happen there similar to checks mentioned earlier.
+There are protections provided by OSes such as ASLR(Address space layout randomization) and DEP(Data Execution Prevention). ALSR randomizes the layout of memory location of structures. The way this protects from buffer overflow attacks is that it makes it harder to guess the stack address making it harder to rewrite the program. DEP marks memory with attributes to make sure code executions can't happen there similar to checks mentioned earlier.
 
 ![ASLR](https://assets.website-files.com/5ff66329429d880392f6cba2/62750ba095367e5445140d1e_Buffer%20Overflow%20Attack-p-1080.jpeg)
 
@@ -48,7 +48,7 @@ In C, there are two functions that are especially vulnerable to overflow attacks
 
 ![C memory structure](https://media.geeksforgeeks.org/wp-content/uploads/memoryLayoutC.jpg)
 
-There are five essential components to the memory layout of a c program.
+There are five essential components to the memory layout of a C program.
 1. Text Segment / Code Segment / Text - The executable instructions
 2. Initialized Data Segment - Initialized global and static variables
 3. Uninitialized Data Segment - Uninitialized global and static variables
@@ -67,7 +67,7 @@ The essential idea is that stacks (usually) grow towards address 0, and heaps gr
 
 The two most common types of buffer overflow attacks are stack-based and heap-based. 
 
-As mentioned earlier, a stack is LIFO data structure. A stack frame has a limited amount of memory so when a function call occurs more than the capacity a fatal error occurs called stack overflow. When this happens, it goes into the next stack frame and can alter its values and outputs. 
+As mentioned earlier, a stack is LIFO data structure made up of stack frames. There are only a limited number of frames that can be placed onto the stack because the memory allocated to the program is limited, as such, when too many are placed on a stack this results in a different type of error: a stack overflow. When this happens, the program usually crashes, terminates, or behaves extremely weirdly.
 
 
 ## Proof of Concept 
