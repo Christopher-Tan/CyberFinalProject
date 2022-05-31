@@ -67,8 +67,9 @@ The essential idea is that stacks (usually) grow towards address 0, and heaps gr
 
 The two most common types of buffer overflow attacks are stack-based and heap-based. 
 
-As mentioned earlier, a stack is LIFO data structure made up of stack frames. There are only a limited number of frames that can be placed onto the stack because the memory allocated to the program is limited, as such, when too many are placed on a stack this results in a different type of error: a stack overflow. When this happens, the program usually crashes, terminates, or behaves extremely weirdly.
+As mentioned earlier, a stack is LIFO data structure made up of stack frames. There are only a limited number of frames that can be placed onto the stack because the memory allocated to the program is limited, as such, when too many are placed on a stack this results in a different type of error: a stack overflow. When this happens, the program usually crashes, terminates, or behaves extremely weirdly. Back to buffer overflows, for a stack-based attack, the malicious input usually overwrites part or an entire stack frame, the other group will talk more about the specifics of this exploit. Heaps are much less organized and quite different. As such, the ways of attacking them are different as well.
 
+In C, to edit heap memory, you must use functions like malloc, calloc, and free. If the input is not stored on the stack but on the heap, then there are different ways of mapping out heap memory and choosing the correct input to overwrite the parts you need. Generally, heap attacks are not as useful because unlike stacks which interact closely with executable code, heaps don't.
 
 ## Proof of Concept 
 ```
