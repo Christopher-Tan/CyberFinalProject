@@ -87,12 +87,13 @@ int main() {
 The code normally runs ls, however, overflowing the input buffer allows us to alter the command variable. If the program was running with root priviledges, the attacker would have full access to the machine.
 
 Sources:
-https://www.securecoding.com/blog/how-to-protect-against-buffer-overflow-attack/ 
-https://www.synopsys.com/blogs/software-security/detect-prevent-and-mitigate-buffer-overflow-attacks/ 
-https://www.geeksforgeeks.org/buffer-overflow-attack-with-example/ 
-https://www.thegeekstuff.com/2013/06/buffer-overflow/ 
-https://www.excelsior.edu/article/understanding-the-dangers-of-buffer-overflow-attacks/ 
-https://stackoverflow.com/questions/648309/what-does-it-mean-by-buffer 
-https://www.imperva.com/learn/application-security/buffer-overflow/ 
-https://web.ecs.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf 
-https://www.logsign.com/blog/buffer-overflow-attack-prevention/ 
+
+- https://www.securecoding.com/blog/how-to-protect-against-buffer-overflow-attack/ 
+- https://www.synopsys.com/blogs/software-security/detect-prevent-and-mitigate-buffer-overflow-attacks/ 
+- https://www.geeksforgeeks.org/buffer-overflow-attack-with-example/ 
+- https://www.thegeekstuff.com/2013/06/buffer-overflow/ 
+- https://www.excelsior.edu/article/understanding-the-dangers-of-buffer-overflow-attacks/ 
+- https://stackoverflow.com/questions/648309/what-does-it-mean-by-buffer 
+- https://www.imperva.com/learn/application-security/buffer-overflow/ 
+- https://web.ecs.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf 
+- https://www.logsign.com/blog/buffer-overflow-attack-prevention/ 
