@@ -33,7 +33,8 @@
 	Matthew- Tested out the challenge code, more plans for presentation: how to brute force/code for challenge, buffer overflow in modern day, future of buffer overflow?
 #### 5/28:
 	Christopher- Merged branches, worked on completing extraneous documentation and fixing OS code compilation problems.
-#### 5/29
-	Matthew - Worked on presentation on how to counter/recognize buffer overflow.
-#### 5/40
+#### 5/29:
+	Matthew- Worked on presentation on how to counter/recognize buffer overflow.
+#### 5/30:
+	Christopher- Continued working on presentation
 	Matthew- Worked on presentation on stack based buffer overflow
